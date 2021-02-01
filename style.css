@@ -1,0 +1,230 @@
+
+body {
+  color: white;
+  margin: 0;
+  font-family: Arial;
+  text-align: center;
+  background: url("559128.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+}
+
+ header{
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   height: 100vh; /*pega todo monitor do cidadao*/
+   background-color: #CCC;
+ }
+
+ .header {
+   height: 30px;
+   background-color: red;
+ }
+
+ .slider {
+   flex: 1;
+   overflow: hidden;
+ }
+ .slider--width {
+   height: 100%;
+   display: flex;
+   transition: all ease 0.9s;
+   
+ }
+ .slider--item {
+   width: 100vw;
+   height: inherit; /*herda a altura*/
+   background-position: center;
+   background-size: cover;
+ }
+ .slider--controls {
+   position: absolute;
+   z-index:99;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+ .slider--control {
+   width: 50px;
+   height: 50px;
+   background-color: white;
+   border-radius: 50%;
+   overflow: hidden;
+   cursor: pointer;
+ }
+
+.mainBox {
+  background: #374c6e;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 2px;
+  
+}
+
+#bluebox {
+  color: white;
+  background-size: 100%;
+  background: #374c6e;
+  margin: 20px;
+}
+
+#whitebox {
+  background-size: 100%;
+  background:#374c6e;
+  margin: 20px;
+}
+
+.box1 {
+  background: url("559128.jpg");
+  margin: 2px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: end;
+  background-size: cover;
+}
+
+.insidebox1 {
+  background: black;
+  padding-left: 32px;
+  padding-right: 40px;
+  
+  margin-bottom: 0px;
+}
+
+h1 {
+  text-align: center;
+  font-family: AdventPro-Bold;
+  padding-top: 50px;
+  font-size: 80px;
+}
+
+p {
+  text-align: center;
+  font-style: italic;
+  color: black;
+}
+
+.home {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  overflow: hidden;
+  position: fixed;
+  background-color: #374c6e;
+  top: 0;
+  width: 100%;
+  margin: 2px;
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, transparent, #CCC, transparent);  
+}
+
+.home a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.home a:hover {
+  background:white;
+  color: black;
+}
+
+h3 {
+  margin: 20px;
+  color: white;
+  
+}
+
+.text {
+  color: white;
+}
+
+.meuscontatos {
+  color: white;
+}
+
+h4 {
+  color:black;
+}
+
+.copy {
+  padding-right: 1450px;
+  padding-top: 10px;
+  color: white;
+
+}
+
+.contact {
+  background: #374c6e;
+  display: flex;
+  justify-content: end;
+  margin: 2px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.contact a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  background:  black;
+  color: #374c6e;
+}
+
+.icons {
+  height: 30px;
+  margin: 10px;
+}
+
+.logo {
+  width: 100px;
+  margin: 20px;
+  border-radius: 400px;
+}
+
+@font-face {
+  font-family: AdventPro-Bold;
+  src: url(AdventPro-Bold.ttf);
+}
+
+@media (max-width: 600px) {
+.mainBox {
+  background: #374c6e;
+  display: flex;
+  justify-content: center;
+  margin: 2px;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  
+}  
+.home {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+    background-color:#374c6e;
+    top: 0;
+    width: 100%;
+}
+
+
+
+}
